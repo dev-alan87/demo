@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:demo
+    driverClassName: org.h2.Driver
+    user: sa
+    password: sa
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        ddl-auto: update
+  h2:
+    console:
+      enabled: true
+      path: /h2console
+  security:
+    user:
+      name: dev_alan87
+      password: 123
+
+security:
+  jwt:
+    signature-key: bWV1IGRldXMgbWV1IHNlbmhvciBtZSBhanVkYSBwb3IgZmF2b3I
+    expiration: 30
